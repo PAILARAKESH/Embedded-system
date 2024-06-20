@@ -1,0 +1,18 @@
+#include <reg51.h>
+#include <stdio.h>
+void dly()
+{
+	unsigned int i;
+	for(i=0;i<=12000;i++);
+	
+}
+void main()
+{
+TMOD=0x20;
+SCON=0x50;
+TH1=0xFD;
+	TR1=1;
+	TI=1;
+ printf("hello world");
+while(1);
+}
